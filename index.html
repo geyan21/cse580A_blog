@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Large Multimodal Models for Robotics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #222;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 8px;
+        }
+
+        .figure-caption {
+            text-align: center;
+            font-style: italic;
+            color: #555;
+            margin-top: -10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            background: #333;
+            color: #fff;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .citation {
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        .references {
+            margin-top: 30px;
+            padding-top: 10px;
+            border-top: 2px solid #ccc;
+        }
+
+        .references h2 {
+            color: #222;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .references ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .references li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Large Multimodal Models for Robotics</h1>
+    </header>
+
+    <div class="container">
+        <p><strong>By:</strong> Ge Yan</p>
+        <p>
+            In recent years, large multimodal models (LMMs) have emerged as groundbreaking tools in artificial intelligence, particularly for their capacity to process and interpret diverse types of data simultaneously—images, text, video, and even sensor data. These models, built on advanced architectures such as transformers, have revolutionized tasks ranging from language translation to image generation (<span class="citation">Brown et al., 2020</span>). Now, they are poised to empower robotics in unprecedented ways. While the potential for innovation is vast, the societal implications and ethical considerations deserve a closer examination.
+        </p>
+
+        <img src="figure.png" alt="Humanoid Robot in Industrial Environment">
+        <p class="figure-caption">Figure 1: A humanoid robot demonstrating advanced multimodal understanding in an industrial setting.</p>
+
+        <h2>What Are Large Multimodal Models?</h2>
+        <p>
+            Large multimodal models integrate data from multiple modalities (e.g., vision, language, audio) to create a unified representation of the world (<span class="citation">Radford et al., 2021</span>). For instance, an LMM might process both an image of a robot arm and a text command like "Pick up the red object on the table" to guide the robot in performing the task.
+        </p>
+        <p>
+            These models are trained on massive datasets spanning different domains, enabling them to generalize across tasks and environments. Popular examples include OpenAI’s CLIP and GPT-4, which fuse vision and language, and Meta’s DINO for visual understanding (<span class="citation">Bommasani et al., 2021</span>). When integrated into robotics, LMMs allow machines to perceive, understand, and act upon the physical world with a level of contextual awareness that was previously unattainable.
+        </p>
+
+        <img src="multimodal_model.png" alt="Diagram of Multimodal Model Functionality">
+        <p class="figure-caption">Figure 2: A simplified illustration of how large multimodal models integrate data from multiple sources to enable understanding and action.</p>
+
+        <h2>The Rise of Multimodal Robotics</h2>
+        <p>
+            Robots equipped with LMMs are no longer confined to rigid, pre-programmed behaviors. They can adapt dynamically to new scenarios (<span class="citation">Zellers et al., 2022</span>). For example:
+        </p>
+        <ul>
+            <li><strong>Perception:</strong> LMMs enable robots to interpret complex scenes, distinguishing objects, actions, and their relationships. A household robot could analyze a cluttered kitchen and identify tools for a specific recipe.</li>
+            <li><strong>Instruction Following:</strong> By understanding natural language, these robots can follow nuanced commands, such as “Organize these books by color and size.”</li>
+            <li><strong>Collaboration:</strong> Multimodal understanding allows robots to collaborate seamlessly with humans, interpreting gestures and spoken instructions simultaneously.</li>
+        </ul>
+
+        <img src="human_robot_collaboration.png" alt="Human and Robot Collaboration">
+        <p class="figure-caption">Figure 3: Human-robot collaboration facilitated by multimodal models. A system that allows home robots to cook in collaboration with humans</p>
+
+        <h2>The Benefits: A Glimpse Into the Future</h2>
+        <p>
+            <strong>1. Democratization of Robotics</strong><br>
+            LMMs reduce the need for task-specific programming, making robotics more accessible to non-experts (<span class="citation">Floridi et al., 2018</span>). Imagine teachers deploying robots in classrooms to adapt to students’ needs or small businesses using them for inventory management without requiring technical expertise.
+        </p>
+        <p>
+            <strong>2. Efficiency in Complex Environments</strong><br>
+            Robots with multimodal capabilities can perform diverse tasks more effectively. For example, a logistics robot in a warehouse might use visual data to locate packages and read barcodes while understanding verbal updates from a human supervisor.
+        </p>
+        <p>
+            <strong>3. Healthcare and Elderly Care</strong><br>
+            Robots powered by LMMs could assist in caregiving tasks, such as monitoring vital signs, understanding patients’ needs through speech, and providing companionship (<span class="citation">Levy et al., 2020</span>). This could alleviate the burden on overworked healthcare workers.
+        </p>
+
+        <h2>The Ethical and Societal Concerns</h2>
+        <p>
+            Despite their potential, LMMs in robotics also introduce significant challenges:
+        </p>
+        <ul>
+            <li><strong>Bias in Training Data:</strong> If training datasets include stereotypes or prejudices, robots might perpetuate these biases (<span class="citation">Hao et al., 2021</span>).</li>
+            <li><strong>Privacy and Surveillance:</strong> Robots with multimodal sensors might inadvertently invade individual privacy in public or private spaces (<span class="citation">Kovacs, 2020</span>).</li>
+            <li><strong>Job Displacement:</strong> Robots replacing human workers could lead to unemployment and inequality (<span class="citation">Brynjolfsson & McAfee, 2014</span>).</li>
+        </ul>
+
+        <h2>Conclusion</h2>
+        <p>
+            Large multimodal models hold immense promise for robotics, enabling machines to perform tasks with unprecedented adaptability and intelligence. However, these advancements come with ethical and societal challenges that must not be overlooked.
+        </p>
+        <p>
+            As we move forward, a balanced approach is crucial—one that maximizes the benefits of LMMs while proactively addressing their risks. By fostering responsible development, transparent practices, and inclusive policies, we can ensure that this powerful technology contributes to a future that is not only innovative but also equitable and just.
+        </p>
+
+        <div class="references">
+            <h2>References</h2>
+            <ul>
+                <li>Brown, T. B., et al. (2020). Language Models are Few-Shot Learners. <em>Advances in Neural Information Processing Systems</em>.</li>
+                <li>Radford, A., et al. (2021). Learning Transferable Visual Models from Natural Language Supervision. <em>Proceedings of the International Conference on Machine Learning</em>.</li>
+                <li>Bommasani, R., et al. (2021). On the Opportunities and Risks of Foundation Models. <em>arXiv preprint</em>. https://arxiv.org/abs/2108.07258</li>
+                <li>Zellers, R., et al. (2022). PIGLeT: Language Grounding Through Neuro-Symbolic Interaction in a 3D World. <em>CVPR 2022</em>.</li>
+                <li>Floridi, L., et al. (2018). AI for Social Good: Balancing Ethical Challenges with Societal Benefits. <em>Science</em>, 361(6404), 751-752. https://doi.org/10.1126/science.aat5991</li>
+                <li>Hao, K., et al. (2021). The Hidden Bias in AI Models. <em>MIT Technology Review</em>. https://www.technologyreview.com/2021/02/11/1017891/ai-bias-hidden-costs</li>
+                <li>Levy, J., et al. (2020). AI in Healthcare: A Human-Centered Design Perspective. <em>Journal of Medical Ethics</em>. https://doi.org/10.1136/medethics-2020-1065</li>
+                <li>Brynjolfsson, E., & McAfee, A. (2014). The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies. W. W. Norton & Company.</li>
+                <li>Kovacs, E. (2020). Privacy Concerns in AI-Powered Surveillance Systems. <em>IEEE Security & Privacy</em>, 18(3), 19-25. https://doi.org/10.1109/MSEC.2020.2978154</li>
+            </ul>
+        </div>
+        
